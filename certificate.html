@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÜV SÜD Certificate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="tuv-logo">
+                    <div class="tuv-circle">TÜV</div>
+                </div>
+                <h1 class="header-title">TÜV SÜD for Safety Engineering</h1>
+            </div>
+            <div class="home-tab">HOME</div>
+        </header>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-image">
+                <img id="certificatePhoto" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Profile Photo">
+            </div>
+            <button class="name-button" id="certificateName">LOADING...</button>
+        </div>
+
+        <!-- Certificate Info -->
+        <div class="certificate-info">
+            <div class="update-date">
+                <strong>Last Updated/ Printed Date:</strong><br>
+                <span id="currentDate"></span>
+            </div>
+            
+            <div class="certificate-number" id="displayCertificateNumber">LOADING...</div>
+            
+            <!-- Details Table -->
+            <div class="details-table" id="certificateDetails">
+                <!-- Details will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            © 2023 TÜV SÜD Middle East. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script type="module" src="certificate.js"></script>
+</body>
+</html>

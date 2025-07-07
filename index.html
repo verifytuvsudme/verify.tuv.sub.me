@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÜV SÜD Certificate Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="tuv-logo">
+                     <img src="./images/logom.png">
+                    <div class="tuv-circle">TÜV</div>
+                </div>
+                <h1 class="header-title">TÜV SÜD for Safety Engineering</h1>
+            </div>
+            <div class="home-tab">HOME</div>
+        </header>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2 class="form-title">Certificate Information Form</h2>
+            
+            <form id="certificateForm" class="certificate-form">
+                <!-- Profile Photo Upload -->
+                <div class="form-group">
+                    <label for="profilePhoto" class="form-label">Profile Photo</label>
+                    <div class="photo-upload-container">
+                        <input type="file" id="profilePhoto" accept="image/*" class="photo-input">
+                        <div class="photo-preview" id="photoPreview">
+                            <span>Click to upload photo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" class="form-input" required>
+                </div>
+
+                <!-- Certificate Number -->
+                <div class="form-group">
+                    <label for="certificateNumber" class="form-label">Certificate Number</label>
+                    <input type="text" id="certificateNumber" name="certificateNumber" class="form-input" required>
+                </div>
+
+                <!-- Type -->
+                <div class="form-group">
+                    <label for="type" class="form-label">Type</label>
+                    <select id="type" name="type" class="form-input" required>
+                        <option value="">Select Type</option>
+                        <option value="TRAINING">TRAINING</option>
+                        <option value="CERTIFICATION">CERTIFICATION</option>
+                        <option value="ASSESSMENT">ASSESSMENT</option>
+                    </select>
+                </div>
+
+                <!-- Company Name -->
+                <div class="form-group">
+                    <label for="companyName" class="form-label">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" class="form-input" required>
+                </div>
+
+                <!-- Location -->
+                <div class="form-group">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" id="location" name="location" class="form-input" required>
+                </div>
+
+                <!-- Country -->
+                <div class="form-group">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" id="country" name="country" class="form-input" required>
+                </div>
+
+                <!-- Certified As -->
+                <div class="form-group">
+                    <label for="certifiedAs" class="form-label">Certified As</label>
+                    <input type="text" id="certifiedAs" name="certifiedAs" class="form-input" required>
+                </div>
+
+                <!-- IQAMA No -->
+                <div class="form-group">
+                    <label for="iqamaNo" class="form-label">IQAMA No</label>
+                    <input type="text" id="iqamaNo" name="iqamaNo" class="form-input" required>
+                </div>
+
+                <!-- Trainer/Assessor -->
+                <div class="form-group">
+                    <label for="trainer" class="form-label">Trainer/Assessor</label>
+                    <input type="text" id="trainer" name="trainer" class="form-input" required>
+                </div>
+
+                <!-- Timesheet Nos -->
+                <div class="form-group">
+                    <label for="timesheetNos" class="form-label">Timesheet Nos</label>
+                    <input type="text" id="timesheetNos" name="timesheetNos" class="form-input" required>
+                </div>
+
+                <!-- Issue Date -->
+                <div class="form-group">
+                    <label for="issueDate" class="form-label">Issue Date</label>
+                    <input type="date" id="issueDate" name="issueDate" class="form-input" required>
+                </div>
+
+                <!-- Expiry Date -->
+                <div class="form-group">
+                    <label for="expiryDate" class="form-label">Expiry Date</label>
+                    <input type="date" id="expiryDate" name="expiryDate" class="form-input" required>
+                </div>
+
+                <!-- Certified By Branch -->
+                <div class="form-group">
+                    <label for="certifiedByBranch" class="form-label">Certified By Branch</label>
+                    <input type="text" id="certifiedByBranch" name="certifiedByBranch" class="form-input" required>
+                </div>
+
+                <!-- Scope of Work -->
+                <div class="form-group">
+                    <label for="scopeOfWork" class="form-label">Scope of Work</label>
+                    <textarea id="scopeOfWork" name="scopeOfWork" class="form-input form-textarea" rows="3"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-button">Generate Certificate</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            © 2023 TÜV SÜD Middle East. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script type="module" src="form.js"></script>
+</body>
+</html>

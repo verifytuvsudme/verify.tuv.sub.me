@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download QR Code - TÜV SÜD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="tuv-logo">
+                    <div class="tuv-circle">TÜV</div>
+                </div>
+                <h1 class="header-title">TÜV SÜD for Safety Engineering</h1>
+            </div>
+            <div class="home-tab">HOME</div>
+        </header>
+
+        <!-- QR Code Section -->
+        <div class="qr-section">
+            <h2 class="qr-title">Certificate Generated Successfully!</h2>
+            <p class="qr-description">Your certificate has been created. Use the QR code below to access it anytime.</p>
+            
+            <div class="qr-container">
+                <canvas id="qrCanvas"></canvas>
+            </div>
+            
+            <div class="qr-actions">
+                <button id="downloadQR" class="download-button">Download QR Code</button>
+                <button id="viewCertificate" class="view-button">View Certificate</button>
+                <button id="createNew" class="create-new-button">Create New Certificate</button>
+            </div>
+            
+            <div class="qr-info">
+                <p><strong>Certificate ID:</strong> <span id="qrCertificateId"></span></p>
+                <p><strong>Generated for:</strong> <span id="qrCertificateName"></span></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            © 2023 TÜV SÜD Middle East. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script type="module" src="qr-download.js"></script>
+</body>
+</html>

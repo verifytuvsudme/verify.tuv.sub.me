@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tuv-logo {
+    margin-right: 15px;
+}
+.tuv-logo img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+}
+
+
+.tuv-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+.header-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.home-tab {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 8px 20px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Form Styles */
+.form-section {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.certificate-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #007ACC;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Photo Upload Styles */
+.photo-upload-container {
+    position: relative;
+}
+
+.photo-input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.photo-preview {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #007ACC;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+}
+
+.photo-preview:hover {
+    background-color: #e3f2fd;
+}
+
+.photo-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.photo-preview span {
+    color: #007ACC;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #005a9e;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Profile Section */
+.profile-section {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-image {
+    margin-bottom: 15px;
+}
+
+.profile-image img {
+    width: 144px;
+    height: 182px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+}
+
+.name-button {
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 280px;
+}
+
+/* Certificate Info */
+.certificate-info {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.update-date {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+.certificate-number {
+    color: #007ACC;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Details Table */
+.details-table {
+    width: 100%;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: stretch;
+}
+
+.detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    background-color: #ffffff;
+    padding: 12px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    width: 140px;
+    min-width: 140px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.detail-value {
+    padding: 12px 15px;
+    font-size: 13px;
+    color: #333;
+    flex: 1;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+}
+
+/* QR Code Section */
+.qr-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.qr-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.qr-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.qr-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.download-button, .view-button, .create-new-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.download-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.download-button:hover {
+    background-color: #218838;
+}
+
+.view-button {
+    background-color: #007ACC;
+    color: white;
+}
+
+.view-button:hover {
+    background-color: #005a9e;
+}
+
+.create-new-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.create-new-button:hover {
+    background-color: #545b62;
+}
+
+.qr-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.qr-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.qr-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .form-section {
+        margin: 10px;
+        padding: 20px 15px;
+    }
+    
+    .qr-section {
+        margin: 10px;
+        padding: 30px 15px;
+    }
+    
+    .qr-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-button, .view-button, .create-new-button {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .container {
+        background-color: #f0f0f0;
+    }
+    
+    .header {
+        padding: 12px 15px;
+    }
+    
+    .header-title {
+        font-size: 16px;
+    }
+    
+    .profile-section {
+        padding: 15px;
+    }
+    
+    .profile-image img {
+        width: 144px;
+        height: 182px;
+    }
+    
+    .certificate-info {
+        padding: 15px;
+    }
+    
+    .detail-label {
+        width: 110px;
+        min-width: 110px;
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+    
+    .detail-value {
+        font-size: 11px;
+        padding: 10px 12px;
+    }
+    
+    .certificate-number {
+        font-size: 16px;
+    }
+    
+    .footer {
+        padding: 12px 15px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tuv-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+    }
+    
+    .header-title {
+        font-size: 14px;
+    }
+    
+    .profile-image img {
+        width: 144px;
+        height: 182px;
+    }
+    
+    .name-button {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+    
+    .detail-label {
+        width: 90px;
+        min-width: 90px;
+        font-size: 9px;
+        padding: 8px 10px;
+    }
+    
+    .detail-value {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+    
+    .form-title {
+        font-size: 20px;
+    }
+    
+    .qr-title {
+        font-size: 20px;
+    }
+}
